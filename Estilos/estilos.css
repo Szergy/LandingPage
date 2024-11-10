@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color_primario: #000000;
+  --color_secundario:#0557dc;
+  --color_blanco: #ffffff;
+  --tamano_fuente: 18px;
+  --maximo_ancho: 1200px;
+  --alto_nav: 70px;
+}
+::selection{
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-size: var(--tamano_fuente);
+  background-color: var(--color_secundario);
+  color: var(--color_blanco);
+}
+header{
+  background-color: var(--color_primario);
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+.contenedor{
+  width: 100%;
+  max-width: var(--maximo_ancho);
+  margin: 0 auto;
+  overflow: hidden;
+}
+.h-100{
+  height: calc(98vh - var(--alto_nav));
+}
+/*.nav{
+  height: 80px;
+}*/
+.nav__contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__lista{
+  height: var(--alto_nav);
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.nav__link{
+  text-decoration: none;
+  color: var(--color_secundario);
+  font-weight: bold;
+}
+section{
+
+}
+/**----------Principal-----------**/
+.principal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ilustracion{
+  order: 1;
+  flex-basis: 45%;
+}
+.contenedor-textos{
+  order: 0;
+  flex-basis: 50%;
+}
+.titulo{
+  font-size: 48px;
+  font-weight: 700;
+}
+.parrafo{
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 24px;
+}
+.btn{
+  display: inline-block;
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 16px 30px;
+  border-radius: 30px;
+}
+.btn--blanco{
+  background-color: var(--color_secundario);
+  color: var(--color_blanco);
+}
+/**----------Servicios----------**/
+.servicios{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-center{
+  text-align: center;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card__item{
+  max-width: 350px;
+  width: 30%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background-color: var(--color_blanco);
+  color: var(--color_secundario);
+  padding: 40px 0;
+  border-radius: 10px;
+}
+.card__item--activo{
+  background-color: var(--color_primario);
+}
+.card__plan{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.card__precio{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.card__caracteristica{
+  margin-bottom: 25px;
+}
+/**--------Galeria---------**/
