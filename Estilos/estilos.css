@@ -149,3 +149,11 @@ section{
   gap: 1rem;
   margin-top: 100px;
 }
+/*------Formulario---------*/
+.formulario{
+  display: flex;
+  justify-content: center;
+}
+.cuadro_mensaje{
+  height: 10em;
+}
