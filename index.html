@@ -28,7 +28,7 @@
               <a href="#galeria" class="nav__link">Galeria</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contacto</a>
+              <a href="#contacto" class="nav__link">Contacto</a>
             </li>
           </ul>
         </div>
@@ -79,7 +79,7 @@
     <section id="servicios">
       <div class="contenedor servicios h-100">
         <div class="text-center">
-          <h2 class="titulo">Servicios</h2>
+          <h2 class="titulo_servicios">Servicios</h2>
           <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, natus?</p>
         </div>
         <div class="cards">
@@ -133,30 +133,30 @@
       </div>
     </section>
     <!--Contacto-->
-    <section id="contacto">
-      <div class="contenedor h-100">
+    <section id="contacto" class="contacto">
+      <div class="contenedor">
         <div class="text-center">
-          <h2 class="titulo">Contactenos</h2>
+          <h2 class="titulo">Contáctenos</h2>
           <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, architecto!</p>
         </div>
         <div class="formulario">
           <form action="index.html" method="get" enctype="multipart/form-data">
-            <div>
+            <div class="cuadro_texto">
               <p>Nombre:</p>
               <label for="nombre"></label>
               <input type="text" name="nombre">
             </div>
-            <div>
+            <div class="cuadro_texto">
               <p>Apellidos:</p>
               <label for="apellidos"></label>
               <input type="text" name="apellidos">
             </div>
-            <div>
+            <div class="cuadro_texto">
               <p>Telefono:</p>
               <label for="telefono"></label>
               <input type="number" name="telefono">
             </div>
-            <div>
+            <div class="cuadro_texto">
               <p>Email:</p>
               <label for="email"></label>
               <input type="email" name="email">
@@ -164,7 +164,10 @@
             <p>Mensaje:</p>
             <div class="cuadro_mensaje">
               <label for="mensaje"></label>
-              <textarea name="mensaje" id="mensaje_usuario"></textarea>
+              <textarea name="mensaje" id="mensaje_usuario" rows="15" cols="31"></textarea>
+            </div>
+            <div>
+              <a href="#" class="btn_datos">Enviar datos</a>
             </div>
           </form>
         </div>
